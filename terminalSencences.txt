@@ -1,0 +1,5 @@
+pip3 install -r requirements.txt
+
+python3 detect.py --weights /Users/gauthier/Desktop/yolov5/runs/train/yolov5m_results5/weights/best.pt --img 416 --conf 0.01 --source /Users/gauthier/Desktop/yolov5/Cards/train/images
+
+python train.py --data /Users/Stickers/gauthier/yolov5/data/PlayingCards/data.yaml  --weights '' --cfg yolov5s.yaml --img 640 --batch 16 --epochs 100 --name yolov5m_results
